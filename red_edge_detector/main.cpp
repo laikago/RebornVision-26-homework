@@ -4,7 +4,7 @@
 int main() {
     RedEdgeDetector detector;
     
-    // 示例调用 - 调试模式，不保存视频
+    // 示例调用 - 调试模式，不保存视频则最后为true
     if (!detector.initialize("R2.avi", "R2_detected.mp4",false)) {
         std::cerr << "初始化失败" << std::endl;
         return -1;
